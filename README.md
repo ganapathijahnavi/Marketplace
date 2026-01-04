@@ -1,9 +1,6 @@
 # 🌱 Carbon Credit Marketplace
 
 ### Hackathon Submission – Full‑Stack Web Application
-### 🎥 Demo - https://drive.google.com/file/d/1Tg39GsaeXhMOjf0p0I_qRpwLyOQjrvwp/view?usp=sharing
-### ScreenShots - https://drive.google.com/drive/folders/1t5Or6H9qSd4-PGuhQR0G9r7t6Fkn-Wyq?usp=sharing
-### Website Live - https://ecovault.netlify.app/
 ---
 
 ## 👥 Team Information
@@ -15,7 +12,8 @@
 **Live Deployment**
 - **Frontend:** https://ecovault.netlify.app  
 - **Backend:** Deployed on Render  
-
+- **🎥 Demo:** https://drive.google.com/file/d/1Tg39GsaeXhMOjf0p0I_qRpwLyOQjrvwp/view?usp=sharing
+- **ScreenShots** https://drive.google.com/drive/folders/1t5Or6H9qSd4-PGuhQR0G9r7t6Fkn-Wyq?usp=sharing
 ---
 
 ## 📌 Overview
