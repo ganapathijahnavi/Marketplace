@@ -143,7 +143,7 @@ const Checkout = () => {
       const fetchProjects = async () => {
         try {
           const projectPromises = items.map(item => 
-            axios.get(`http://localhost:5100/api/projects/${item.projectId}`)
+            axios.get(`https://marketplace-1-thid.onrender.com/api/projects/${item.projectId}`)
           );
           const responses = await Promise.all(projectPromises);
           setProjectsDetails(responses.map(res => res.data));
@@ -177,7 +177,7 @@ const Checkout = () => {
       // Place order for each item (carbon credits are per-project)
       const orderPromises = checkoutItems.map(item => {
         console.log(`🔄 Ordering: Project ${item.projectId}, Quantity: ${item.quantity}`);
-        return axios.post('http://localhost:5100/api/orders', {
+        return axios.post('https://marketplace-1-thid.onrender.com/api/orders', {
           projectId: item.projectId,
           creditsPurchased: item.quantity
         }, {
@@ -189,7 +189,7 @@ const Checkout = () => {
       console.log("✅ All orders placed successfully:", results);
 
       // Clear cart after successful order
-      await axios.delete('http://localhost:5100/api/cart', {
+      await axios.delete('https://marketplace-1-thid.onrender.com/api/cart', {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -279,3 +279,4 @@ const Checkout = () => {
 };
 
 export default Checkout;
+

@@ -112,3 +112,4 @@ export const ActionButton = styled(Link)`
     background-color: ${({ type }) => (type === 'add' ? '#218838' : '#0056b3')};
   }
 `;
+

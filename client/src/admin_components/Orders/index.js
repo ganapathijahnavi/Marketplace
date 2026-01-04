@@ -164,7 +164,7 @@ const Orders = () => {
     if (!token) return;
 
     axios
-      .get("http://localhost:5100/api/orders", {
+      .get("https://marketplace-1-thid.onrender.com/api/orders", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setOrders(res.data || []))
@@ -178,7 +178,7 @@ const Orders = () => {
 
     axios
       .put(
-        `http://localhost:5100/api/orders/${selectedOrderId}/status`,
+        `https://marketplace-1-thid.onrender.com/api/orders/${selectedOrderId}/status`,
         statusForm,
         { headers: { Authorization: `Bearer ${token}` } }
       )
@@ -304,3 +304,4 @@ const Orders = () => {
 };
 
 export default Orders;
+

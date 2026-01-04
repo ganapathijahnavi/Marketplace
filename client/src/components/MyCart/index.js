@@ -28,7 +28,7 @@ const MyCart = () => {
   const fetchCart = async () => {
     const token = localStorage.getItem('jwtToken');
     try {
-      const res = await axios.get('http://localhost:5100/api/cart', {
+      const res = await axios.get('https://marketplace-1-thid.onrender.com/api/cart', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCartItems(res.data);
@@ -40,7 +40,7 @@ const MyCart = () => {
   const handleRemove = async (cartItemId) => {
     const token = localStorage.getItem('jwtToken');
     try {
-      await axios.delete(`http://localhost:5100/api/cart/${cartItemId}`, {
+      await axios.delete(`https://marketplace-1-thid.onrender.com/api/cart/${cartItemId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchCart();
@@ -109,3 +109,4 @@ const MyCart = () => {
 };
 
 export default MyCart;
+

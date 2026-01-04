@@ -63,7 +63,7 @@ const Users = () => {
     }
 
     axios
-      .get("http://localhost:5100/users", {
+      .get("https://marketplace-1-thid.onrender.com/users", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -95,3 +95,4 @@ const Users = () => {
 };
 
 export default Users;
+

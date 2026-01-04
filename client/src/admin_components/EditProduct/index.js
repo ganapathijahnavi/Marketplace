@@ -24,7 +24,7 @@ const EditProduct = () => {
   // Fetch categories
   useEffect(() => {
     axios
-      .get("http://localhost:5100/category")
+      .get("https://marketplace-1-thid.onrender.com/category")
       .then((res) => setCategories(res.data))
       .catch((err) => console.error("Error loading categories:", err));
   }, []);
@@ -34,7 +34,7 @@ const EditProduct = () => {
     const fetchProject = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5100/api/projects/${id}`
+          `https://marketplace-1-thid.onrender.com/api/projects/${id}`
         );
         const projectData = {
           ...res.data,
@@ -65,7 +65,7 @@ const EditProduct = () => {
       }
 
       await axios.put(
-        `http://localhost:5100/api/projects/${id}`,
+        `https://marketplace-1-thid.onrender.com/api/projects/${id}`,
         {
           name: formData.name,
           description: formData.description,
@@ -186,3 +186,4 @@ const EditProduct = () => {
 };
 
 export default EditProduct;
+

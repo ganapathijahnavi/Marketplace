@@ -76,7 +76,7 @@ const UpdateProduct = () => {
 
   useEffect(() => {
     // Fetch the existing product data
-    axios.get(`http://localhost:5100/products/${id}`)
+    axios.get(`https://marketplace-1-thid.onrender.com/products/${id}`)
       .then((response) => {
         
         setFormData(response.data);
@@ -96,7 +96,7 @@ const UpdateProduct = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.put(`http://localhost:5100/products/${id}`, formData);
+      const response = await axios.put(`https://marketplace-1-thid.onrender.com/products/${id}`, formData);
 
       console.log('Product updated:', response.data);
       navigate('/admin/all-products')
@@ -188,3 +188,4 @@ const UpdateProduct = () => {
 };
 
 export default UpdateProduct;
+

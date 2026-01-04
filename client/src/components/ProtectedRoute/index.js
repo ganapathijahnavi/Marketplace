@@ -27,3 +27,4 @@ const ProtectedRoute = ({ Component }) => {
 };
 
 export default ProtectedRoute;
+

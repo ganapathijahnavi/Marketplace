@@ -42,3 +42,4 @@ export const Icon = styled.span`
   color: #00796b;
   font-size: 1.5rem;
 `;
+

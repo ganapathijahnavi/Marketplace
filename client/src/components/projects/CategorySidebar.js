@@ -33,7 +33,7 @@ const CategorySidebar = ({ onSelectCategory }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5100/category')
+    axios.get('https://marketplace-1-thid.onrender.com/category')
       .then(res => setCategories(res.data))
       .catch(err => console.error("Error fetching project categories", err));
   }, []);
@@ -56,3 +56,4 @@ const CategorySidebar = ({ onSelectCategory }) => {
 };
 
 export default CategorySidebar;
+

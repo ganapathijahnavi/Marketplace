@@ -93,7 +93,7 @@ const AddCategory = () => {
     try {
       setIsSubmitting(true);
 
-      const response = await axios.post('http://localhost:5100/category', {
+      const response = await axios.post('https://marketplace-1-thid.onrender.com/category', {
         category: category.trim(),
         description: description.trim(),
       });
@@ -142,3 +142,4 @@ const AddCategory = () => {
 };
 
 export default AddCategory;
+

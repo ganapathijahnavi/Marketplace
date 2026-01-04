@@ -96,3 +96,4 @@ export const PaymentSelect = styled.select`
   background-color: #fff;
   color: #333;
 `;
+

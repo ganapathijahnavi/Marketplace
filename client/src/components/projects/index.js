@@ -94,14 +94,14 @@ const Projects = () => {
 
   // Fetch carbon projects
   useEffect(() => {
-    axios.get('http://localhost:5100/api/projects')
+    axios.get('https://marketplace-1-thid.onrender.com/api/projects')
       .then(res => setProjects(res.data))
       .catch(err => console.error('Error fetching projects:', err));
   }, []);
 
   // Fetch project categories
   useEffect(() => {
-    axios.get('http://localhost:5100/category')
+    axios.get('https://marketplace-1-thid.onrender.com/category')
       .then(res => setCategories(res.data))
       .catch(err => console.error('Error fetching categories:', err));
   }, []);
@@ -181,3 +181,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

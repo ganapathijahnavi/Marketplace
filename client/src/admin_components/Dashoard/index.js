@@ -24,7 +24,7 @@ const Dashboard = () => {
         if (!token) return;
 
         const res = await axios.get(
-          "http://localhost:5100/api/admin/summary",
+          "https://marketplace-1-thid.onrender.com/api/admin/summary",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -99,3 +99,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+

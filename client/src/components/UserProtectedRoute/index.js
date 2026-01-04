@@ -26,3 +26,4 @@ const UserProtectedRoute = ({ Component }) => {
 };
 
 export default UserProtectedRoute;
+

@@ -46,3 +46,4 @@ export const Paragraph = styled.p`
   margin-bottom: 20px;
   font-family: 'Inter', sans-serif;
 `;
+

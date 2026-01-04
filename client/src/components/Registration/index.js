@@ -25,7 +25,7 @@ const Registration = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5100/register', {
+      const response = await fetch('https://marketplace-1-thid.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -130,3 +130,4 @@ const Registration = () => {
 };
 
 export default Registration;
+

@@ -28,7 +28,7 @@ const Payments = () => {
   const fetchCart = async () => {
     const token = localStorage.getItem('jwtToken');
     try {
-      const res = await axios.get('http://localhost:5100/my-cart', {
+      const res = await axios.get('https://marketplace-1-thid.onrender.com/my-cart', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setCartItems(res.data);
@@ -45,7 +45,7 @@ const Payments = () => {
   const handleRemoveItem = async (productId) => {
     const token = localStorage.getItem('jwtToken');
     try {
-      await axios.delete(`http://localhost:5100/remove-from-cart/${productId}`, {
+      await axios.delete(`https://marketplace-1-thid.onrender.com/remove-from-cart/${productId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setCartItems(prev => prev.filter(item => item.productId._id !== productId));
@@ -80,7 +80,7 @@ const Payments = () => {
 
     try {
       await axios.post(
-        'http://localhost:5100/orders/place-order',
+        'https://marketplace-1-thid.onrender.com/orders/place-order',
         {
           ...userDetails,
           items,
@@ -92,7 +92,7 @@ const Payments = () => {
       );
 
       // Clear cart after order
-      await axios.delete('http://localhost:5100/clear-cart', {
+      await axios.delete('https://marketplace-1-thid.onrender.com/clear-cart', {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -149,3 +149,4 @@ const Payments = () => {
 };
 
 export default Payments;
+

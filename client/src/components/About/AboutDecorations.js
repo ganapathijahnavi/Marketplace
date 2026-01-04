@@ -221,3 +221,4 @@ const AboutDecorations = () => {
 };
 
 export default AboutDecorations;
+

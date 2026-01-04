@@ -20,3 +20,4 @@ const AdminProtectedRoute = ({ Component }) => {
 };
 
 export default AdminProtectedRoute;
+

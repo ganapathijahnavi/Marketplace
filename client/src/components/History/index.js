@@ -85,7 +85,7 @@ const MyOrders = () => {
       return;
     }
 
-    axios.get('http://localhost:5100/api/orders/my-orders', {
+    axios.get('https://marketplace-1-thid.onrender.com/api/orders/my-orders', {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => setOrders(res.data))
@@ -126,3 +126,4 @@ const MyOrders = () => {
 };
 
 export default MyOrders;
+

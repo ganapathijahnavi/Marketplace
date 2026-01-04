@@ -41,7 +41,7 @@ const AdminProducts = () => {
   const [projects, setProjects] = useState([]);
 
   // 🔁 Updated API for Carbon Projects
-  const api = "http://localhost:5100/api/projects";
+  const api = "https://marketplace-1-thid.onrender.com/api/projects";
 
   useEffect(() => {
     getData();
@@ -102,3 +102,4 @@ const AdminProducts = () => {
 };
 
 export default AdminProducts;
+

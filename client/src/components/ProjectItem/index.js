@@ -29,7 +29,7 @@ const ProjectItem = ({
 
     try {
       const response = await axios.post(
-        "http://localhost:5100/api/orders",
+        "https://marketplace-1-thid.onrender.com/api/orders",
         {
           projectId: id,
           creditsPurchased: 1,
@@ -63,7 +63,7 @@ const ProjectItem = ({
 
     try {
       await axios.post(
-        "http://localhost:5100/api/cart/add",
+        "https://marketplace-1-thid.onrender.com/api/cart/add",
         { projectId: id, quantity: 1 },
         {
           headers: {
@@ -116,3 +116,4 @@ const ProjectItem = ({
 };
 
 export default ProjectItem;
+

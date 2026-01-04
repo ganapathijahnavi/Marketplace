@@ -76,3 +76,4 @@ const ProductItem = ({ id, img, name, description, price, handleDeleteProduct })
 };
 
 export default ProductItem;
+

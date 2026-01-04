@@ -99,7 +99,7 @@ const AddProject = () => {
   // Load project categories
   useEffect(() => {
     axios
-      .get("http://localhost:5100/category")
+      .get("https://marketplace-1-thid.onrender.com/category")
       .then((res) => setCategories(res.data))
       .catch((err) =>
         console.error("Error loading categories:", err.message)
@@ -152,7 +152,7 @@ const AddProject = () => {
 
     try {
       await axios.post(
-        "http://localhost:5100/api/projects",
+        "https://marketplace-1-thid.onrender.com/api/projects",
         {
           name: name.trim(),
           description: description.trim(),
@@ -312,3 +312,4 @@ const AddProject = () => {
 };
 
 export default AddProject;
+

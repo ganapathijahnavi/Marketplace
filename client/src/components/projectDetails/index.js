@@ -31,7 +31,7 @@ const ProjectDetails = () => {
   // Fetch single project
   useEffect(() => {
     axios
-      .get(`http://localhost:5100/api/projects/${id}`)
+      .get(`https://marketplace-1-thid.onrender.com/api/projects/${id}`)
       .then((res) => setProject(res.data))
       .catch((err) => console.error("Error fetching project", err));
   }, [id]);
@@ -39,7 +39,7 @@ const ProjectDetails = () => {
   // Fetch reviews
   useEffect(() => {
     axios
-      .get(`http://localhost:5100/api/reviews/${id}`)
+      .get(`https://marketplace-1-thid.onrender.com/api/reviews/${id}`)
       .then((res) => setReviews(res.data))
       .catch((err) => console.error("Error fetching reviews", err));
   }, [id]);
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
 
     try {
       await axios.post(
-        "http://localhost:5100/api/orders",
+        "https://marketplace-1-thid.onrender.com/api/orders",
         {
           projectId: id,
           creditsPurchased: 1,
@@ -85,7 +85,7 @@ const ProjectDetails = () => {
 
     try {
       await axios.post(
-        "http://localhost:5100/api/reviews",
+        "https://marketplace-1-thid.onrender.com/api/reviews",
         {
           projectId: id,
           rating: numericRating * 2,
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
       setComment("");
 
       const updatedReviews = await axios.get(
-        `http://localhost:5100/api/reviews/${id}`
+        `https://marketplace-1-thid.onrender.com/api/reviews/${id}`
       );
       setReviews(updatedReviews.data);
       alert("Review submitted successfully");
@@ -183,3 +183,4 @@ const ProjectDetails = () => {
 };
 
 export default ProjectDetails;
+

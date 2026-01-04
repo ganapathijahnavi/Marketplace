@@ -40,7 +40,7 @@ const FootprintCalculator = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5100/api/footprint/calculate', {
+      const response = await axios.post('https://marketplace-1-thid.onrender.com/api/footprint/calculate', {
         travelKm: Number(formData.travelKm),
         electricityUnits: Number(formData.electricityUnits),
         flightsPerMonth: Number(formData.flightsPerMonth),
@@ -134,3 +134,4 @@ const FootprintCalculator = () => {
 };
 
 export default FootprintCalculator;
+

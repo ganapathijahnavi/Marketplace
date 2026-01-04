@@ -436,3 +436,4 @@ export const RegistrationAnimatedBg = () => {
     </BackgroundContainer>
   );
 };
+

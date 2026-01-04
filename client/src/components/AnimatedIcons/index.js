@@ -77,3 +77,4 @@ const AnimatedEarth = () => (
 );
 
 export { AnimatedCheckmark, AnimatedLeaf, AnimatedEarth };
+
