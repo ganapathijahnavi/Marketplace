@@ -1,0 +1,35 @@
+# Netlify Configuration for Marketplace Application
+
+# Build Configuration
+[build]
+  # Directory containing the React app to deploy
+  base = "client/"
+  # Command to build the React app
+  command = "npm run build"
+  # Directory with production build output
+  publish = "build"
+
+# Environment Variables (set these in Netlify Dashboard)
+[build.environment]
+  # API endpoint for backend - set in Netlify Dashboard
+  REACT_APP_API_URL = "https://your-backend-url.com"
+
+# Redirect Rules for React Router
+# All routes should serve index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache Configuration
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    # Cache static assets for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    # Don't cache HTML files
+    Cache-Control = "public, max-age=0, must-revalidate"
