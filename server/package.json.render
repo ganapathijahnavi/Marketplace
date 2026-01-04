@@ -1,0 +1,13 @@
+{
+  "name": "marketplace-server",
+  "version": "1.0.0",
+  "description": "Marketplace backend API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

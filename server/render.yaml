@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: marketplace-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5100
+      - key: MONGO_URI
+        sync: false
+      - key: ADMIN_SECRET_TOKEN
+        generateValue: true
+      - key: USER_SECRET_TOKEN
+        generateValue: true
