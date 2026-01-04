@@ -6,7 +6,6 @@ const projectSchema = new mongoose.Schema(
 
     category: {
       type: String,
-      enum: ["Forestry", "Renewable Energy", "Infrastructure"],
       required: true,
     },
 
