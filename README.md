@@ -25,7 +25,7 @@ The platform focuses on **transparency**, **usability**, and **carbon awareness*
 
 ---
 
-## ❓ Problem Statement
+##  Problem Statement
 
 Many people want to reduce their carbon footprint but face challenges such as:
 - Lack of awareness about personal emissions  
@@ -81,7 +81,7 @@ We built a marketplace that:
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React
@@ -109,7 +109,7 @@ We built a marketplace that:
   
           cd server
           npm install
-          npm start
+          node index.js
 
 - Frontend
   
